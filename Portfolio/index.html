@@ -1,0 +1,248 @@
+<html>
+    <head>
+        <title>Adan's Porfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <img src="profile.jpg" alt="John Adan" class="profile-pic">
+            <h1>JOHN ADAN J R</h1>
+            <p>Information Technology Student | Java Enthusiast | Problem Solver | Prompt Engineer</p>
+            <div class="hiring">
+                <a href="_Adan ResumeG.pdf" target="_blank">Resume</a>
+                <a href="#contact">Hire Me!</a>
+            </div>
+        </header>
+
+        <nav>
+            <div class="navigations">
+                <p>JOHN ADAN J R</p>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#certificates">Certifications</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am an Information Technology student with Java as my core expertise, supported by a strong foundation in C, Python, and database systems. 
+                My skill set also includes proficiency in AI tools, Microsoft Word, and Microsoft Excel, which I utilize effectively in both academic and project environments.
+                I have completed specialized training in Prompt Engineering, further enhancing my ability to work with advanced AI-driven solutions. 
+                With a commitment to continuous learning and professional growth, I strive to apply my technical expertise to deliver innovative and impactful outcomes.</p>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                <div class="circle" data-percent="85"><i class="fab fa-java"></i></div>
+                
+                <p>Java</p>
+                </div>
+                <div class="skill">
+                <div class="circle" data-percent="80"><i class="fab fa-c"></i></div>
+                
+                <p>C</p>
+                </div>
+                <div class="skill">
+                <div class="circle" data-percent="70"><i class="fab fa-python"></i></div>
+                
+                <p>Python</p>
+                </div>
+                <div class="skill">
+                <div class="circle" data-percent="70"><i class="fas fa-database"></i></i></div>
+                
+                <p>MySQL</p>
+                </div>
+            </div>
+
+            <h4>Other Knowledges</h4>
+            <p>Problem Solving | Prompt Engineering | Canva</p>
+        </section>
+        
+        
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="projects-gallery">
+                
+                <div class="project-card">
+                <i class="fas fa-lock project-icon"></i>
+                <h4>Digilocker System</h4>
+                <p>A web-based application using PHP & MySQL for secure document storage and management.</p>
+                <a href="https://github.com/JOHN-1415/Digilocker-System">Know more</a>
+                </div>
+
+                <div class="project-card">
+                <i class="fas fa-vote-yea project-icon"></i>
+                <h4>Online Voting System</h4>
+                <p>A Java AWT project enabling efficient online voting with user-friendly interfaces.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="certificates">
+            <h2>Certifications</h2>
+            <div class="cert-slider">
+                <div class="cert-track">
+                <div class="cert-slide">
+                    <img src="JAVA-NPTEL.png" alt="NPTEL Java Certification">
+                    <h3>Programming in Java</h3>
+                    <p>NPTEL | 2024</p>
+                </div>
+                <div class="cert-slide">
+                    <img src="DBMS.png" alt="NPTEL DBMS Certificate">
+                    <h3>Introduction to Database</h3>
+                    <p>NPTEL | 2025</p>
+                </div>
+                <div class="cert-slide">
+                    <img src="JAVA(BASIC).png" alt="Hackerrank Certificate">
+                    <h3>Hackerrank Challenge for Java(Basics)</h3>
+                    <p>Hackerrank | 2025</p>
+                </div>
+                <div class="cert-slide">
+                    <img src="prompt eng c2.jpg" alt="Prompt Engineering Certificate">
+                    <h3>Prompt Engineering with ChatGPT</h3>
+                    <p>Linked in | 2025</p>
+                </div>
+                </div>
+            </div>
+            <div class="cert-dots"></div>
+        </section>
+        
+        
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                
+                <!-- Left Side: Info -->
+                <div class="contact-info">
+                <h3>Contact</h3>
+                <p><strong>Email:</strong> johnadan0606@gmail.com</p>
+                <p><strong>Phone:</strong> 9042805421</p>
+                
+                <h3>Connect with Me</h3>
+                <a href="https://www.linkedin.com/in/johnadan25" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a><br>
+                <a href="https://https://github.com/JOHN-1415" target="_blank">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                </div>
+
+                <!-- Right Side: Form -->
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <textarea id="message" placeholder="Your Message" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+                <a href="#about">About</a><br>
+                <a href="#skills">Skills</a><br>
+                <a href="#projects">Projects</a><br>
+                <a href="#certificates">Certifications</a><br>
+                <a href="#contact">Contact</a><br>
+                <p>© 2025 John Adan J R. All rights reserved.</p><br>
+        </footer>
+
+
+        <script>
+            let slideIndex = 0;
+            const track = document.querySelector(".cert-track");
+            const slides = document.querySelectorAll(".cert-slide");
+            const totalSlides = slides.length;
+            const dotsContainer = document.querySelector(".cert-dots");
+
+            // create dots dynamically
+            for (let i = 0; i < totalSlides; i++) {
+            const dot = document.createElement("span");
+            if (i === 0) dot.classList.add("active");
+            dot.addEventListener("click", () => {
+                slideIndex = i;
+                updateSlide();
+            });
+            dotsContainer.appendChild(dot);
+            }
+
+            const dots = document.querySelectorAll(".cert-dots span");
+
+            function updateSlide() {
+            track.style.transform = `translateX(-${slideIndex * 100}%)`;
+            dots.forEach(dot => dot.classList.remove("active"));
+            dots[slideIndex].classList.add("active");
+            }
+
+            function autoSlide() {
+            slideIndex++;
+            if (slideIndex >= totalSlides) slideIndex = 0;
+            updateSlide();
+            }
+
+            setInterval(autoSlide, 3000); // auto-slide every 3s
+
+            // for progress
+            document.querySelectorAll(".circle").forEach(circle => {
+                let percent = circle.getAttribute("data-percent");
+                let icon = circle.querySelector("i");
+
+                circle.addEventListener("mouseenter", () => {
+                let current = 0;
+                icon.style.opacity = "0";   // hide icon
+                circle.textContent = "0%";
+
+                let interval = setInterval(() => {
+                    if (current >= percent) {
+                    clearInterval(interval);
+                    } else {
+                    current++;
+                    circle.style.background = `conic-gradient(#bb86fc ${current}%, #333 ${current}% 100%)`;
+                    circle.textContent = current + "%";
+                    }
+                }, 20);
+                });
+
+                circle.addEventListener("mouseleave", () => {
+                circle.style.background = `conic-gradient(#333 0% 100%)`;
+                circle.textContent = "";
+                icon.style.opacity = "1";   // show icon back
+                });
+            });
+
+            //for mail
+            document.getElementById("contactForm").addEventListener("submit", function(e) {
+                e.preventDefault(); // stop normal submit
+
+                let name = document.getElementById("name").value;
+                let email = document.getElementById("email").value;
+                let message = document.getElementById("message").value;
+
+                let subject = "New message from " + name;
+                let body = "From: " + name + " (" + email + ")\n\n" + message;
+
+                // Gmail compose link
+                let gmailLink = "https://mail.google.com/mail/?view=cm&fs=1" +
+                                "&to=johnadan0606@gmail.com" +
+                                "&su=" + encodeURIComponent(subject) +
+                                "&body=" + encodeURIComponent(body);
+
+                window.open(gmailLink, "_blank");
+            });
+        </script>
+
+
+
+    </body>
+</html>
