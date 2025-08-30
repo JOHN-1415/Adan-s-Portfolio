@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../Users/johna/AppData/Local/Programs/Python"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "web programming"
+	}
+}
