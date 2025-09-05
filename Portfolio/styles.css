@@ -223,61 +223,65 @@ h2, h4, h5 {
 }
 
 
-
-#certifications {
-  padding: 50px 0;
+/* ===== Gallery Animation ===== */
+#gallery {
+  padding: 20px 20px;
+  background: #111;
+  color: #f5f5dc;
   text-align: center;
 }
 
-
-.cert-slider {
-  position: relative;
-  width: 400px;
-  margin: 0 auto;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.cert-track {
-  display: flex;
-  transition: transform 0.8s ease-in-out;
-}
-
-.cert-slide {
-  min-width: 100%;
-  box-sizing: border-box;
-  padding: 20px;
-}
-
-.cert-slide img {
+.gallery {
   width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 8px;
+  padding: 20px;
+  overflow-x: auto;   /* enable horizontal scroll */
+  overflow-y: hidden; /* no vertical scroll */
+}
+
+.gallery ul li img {
+  max-width: 100%;    
+  height: 150px;       /* all certificates same height */
+  object-fit: contain; /* keep proportions without cropping */
   margin-bottom: 10px;
+  /* margin-top: 80px; */
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
-.cert-dots {
-  margin-top: 5px;
+
+.cards {
   display: flex;
-  justify-content: center;
-  gap: 10px;
+  gap: 20px;
+  list-style: none;
+  padding: 50px;
+  margin: 0;
+  overflow-x: auto;   /* enables horizontal scroll */
+  flex-wrap: nowrap;  /* keeps all items in one row */
+  scroll-behavior: smooth; /* smooth scrolling */
 }
 
-.cert-dots span {
-  width: 12px;
-  height: 12px;
-  background: #666;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background 0.3s ease;
+.cards li {
+  background: linear-gradient(135deg, #bb86fc, #3d0066);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 220px;      /* slightly larger for readability */
+  flex: 0 0 auto;    /* prevents shrinking */
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
   cursor: pointer;
 }
 
-.cert-dots .active {
-  background: #bb86fc; /* purple highlight */
+.cards li:hover {
+  transform: translateY(-15px) scale(1.05);
+  box-shadow: 0 0 30px rgba(187, 134, 252, 0.7);
 }
+
 
 #contact {
   padding: 4rem 2rem;

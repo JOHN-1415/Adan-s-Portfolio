@@ -23,7 +23,7 @@
                     <a href="#about">About</a>
                     <a href="#skills">Skills</a>
                     <a href="#projects">Projects</a>
-                    <a href="#certificates">Certifications</a>
+                    <a href="#gallery">Certifications</a>
                     <a href="#contact">Contact</a>
                 </div>
             </div>
@@ -87,35 +87,31 @@
             </div>
         </section>
 
-        <section id="certificates">
-            <h2>Certifications</h2>
-            <div class="cert-slider">
-                <div class="cert-track">
-                <div class="cert-slide">
-                    <img src="JAVA-NPTEL.png" alt="NPTEL Java Certification">
+    
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <ul class="cards">
+                <li><img src="JAVA-NPTEL.png" alt="NPTEL Java Certification">
                     <h3>Programming in Java</h3>
-                    <p>NPTEL | 2024</p>
-                </div>
-                <div class="cert-slide">
-                    <img src="DBMS.png" alt="NPTEL DBMS Certificate">
+                    <p>NPTEL | 2024</p></li>
+                <li><img src="DBMS.png" alt="NPTEL DBMS Certificate">
                     <h3>Introduction to Database</h3>
-                    <p>NPTEL | 2025</p>
-                </div>
-                <div class="cert-slide">
-                    <img src="JAVA(BASIC).png" alt="Hackerrank Certificate">
+                    <p>NPTEL | 2025</p></li>
+                <li><img src="JAVA(BASIC).png" alt="Hackerrank Certificate">
                     <h3>Hackerrank Challenge for Java(Basics)</h3>
-                    <p>Hackerrank | 2025</p>
-                </div>
-                <div class="cert-slide">
-                    <img src="prompt eng c2.jpg" alt="Prompt Engineering Certificate">
+                    <p>Hackerrank | 2025</p></li>
+                <li><img src="prompt eng c2.jpg" alt="Prompt Engineering Certificate">
                     <h3>Prompt Engineering with ChatGPT</h3>
-                    <p>Linked in | 2025</p>
-                </div>
-                </div>
+                    <p>Linked in | 2025</p></li>
+                <li><img src="git.png" alt="Git Essential Training">
+                    <h3>Git Essential Training</h3>
+                    <p>Linked in | 2025</p></li>
+                
+                </ul>
             </div>
-            <div class="cert-dots"></div>
         </section>
-        
+
         
         <section id="contact">
             <h2>Contact Me</h2>
@@ -213,6 +209,7 @@
                     }
                 }, 20);
                 });
+
 
                 circle.addEventListener("mouseleave", () => {
                 circle.style.background = `conic-gradient(#333 0% 100%)`;
